@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 获取浏览器url各类值
 ---
 # 获取浏览器url的各类值
