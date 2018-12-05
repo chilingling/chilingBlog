@@ -8,6 +8,28 @@ layout: default
 		</div>
 		<div class="post-meta">
 			<div>博客的信息</div>
+
 		</div>
 	</center>
 </header>
+<!-- <article class="post" itemscope itemtype=''> -->
+<div class="post-content">
+	<center>
+		{% if page.subtitle %}
+		<p>{{ page.subtitle }}</p>
+		{% endif %}
+	</center>
+	<h2>Directory</h2>
+</div>
+<div id="category"></div>
+<div class="post-content" itemprop='articleBody'>
+	{{ content }}
+</div>
+<div>
+	{% if page.finished %}
+	<div class="eof"></div>
+	{% else %}
+	<div class="tbc"></div>
+	{% endif %}
+</div>
+</article>
