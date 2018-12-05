@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-	
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-	<title>{{page.title}}</title>
+	{% include head.html %}
+	<!-- <title>{{page.title}}</title> -->
 </head>
 <body>
-	{{content}}
+	{% include header.html %}
+	<div class="wrapper">
+		{{content}}
+	</div>
 </body>
+<foot>
+	{% include footer.html %}
+	{% include foot.html %}
+</foot>
 </html>

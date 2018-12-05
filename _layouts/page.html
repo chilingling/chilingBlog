@@ -1,0 +1,26 @@
+---
+layout: null
+---
+<html>
+	<head>
+		{% include head.html %}
+	</head>
+	{% include header.html %}
+	<header class="post-header">
+		<center>
+			<div class="contact-title">
+				{{ page.title }}
+			</div>
+			<div>{{ page.subtitle }}</div>
+		</center>
+	</header>
+	<div class="wrapper">
+		<div class="post-content">
+			{{ content }}
+		</div>
+	</div>
+	<footer>
+		{% include foot.html %}
+		{% include footer.html %}
+	</footer>
+</html>

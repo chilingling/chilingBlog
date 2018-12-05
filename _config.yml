@@ -1,1 +1,11 @@
+# 网站的配置
+title: '炽凌的笔记本'
+name: '炽凌的笔记本'
+email: 1345210829@qq.com
+description: >
+    '炽凌记录一些笔记的地方，可能很懒，但我会尽量写的'
+baseurl: '/chilingBlog'
+url: ''
+github_username: 'chiling'
 theme: jekyll-theme-slate
+markdown: kramdown
