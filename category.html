@@ -1,7 +1,21 @@
 ---
 layout: page
-title: Category
-subtitle: Do something I like
+title: 文章分类
+subtitle: 可以是技术，也可以是闷骚的文青
 permalink: /category/
 ---
-<h2>分类</h2>
+
+{% for category in site.categories %}
+{% capture cat %}{{ category | first }}{% endcapture %}
+
+<h2>{{ cat | capitalize }}</h2>
+	<ul>
+	{% for post in site.categories[cat] %}
+	  <li>
+	  <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	     <span class="date"> - {{ post.date | date: "%Y-%m-%d" }}</span></p>
+	  </li>
+	{% endfor %}
+	</ul>
+
+{% endfor %}

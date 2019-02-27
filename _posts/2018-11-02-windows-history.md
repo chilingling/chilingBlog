@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 获取浏览器url各类值
+categories: JavaScript
 ---
 # 获取浏览器url的各类值
 > 在日常的前端开发过程中，我们不可避免地会遇到一些场景：在js中判断浏览器url中地各类值分别是什么，或者直接改变他们的值向服务器发起请求。在这些场景中我们需要打交道的一个对象就是window.location，通过window.location,我们可以实现一下几种需求

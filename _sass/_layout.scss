@@ -5,7 +5,6 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -29,8 +28,14 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    text-align: center;
+    .forkme-badge{
+        position: absolute;
+        right: 0;
+        top: 64px;
+    }
 }
 
 
@@ -255,4 +260,45 @@
         width:100%;
         margin-bottom:5px;
     }
+}
+.header{
+    margin: 0 auto;
+    text-align: left;
+    height: 64px;
+    line-height: 64px;
+    background: rgb(0, 21, 41);
+    .wrapper{
+        max-width: 740px;
+        h1{
+            a{
+                color: #fff;
+                font-size: 28px;
+            }
+            display: inline-block;
+            margin: 0;
+        }
+        .nav {
+            display: inline-block;
+            margin: 0;
+            line-height: 46px;
+            li{
+                display: inline-block;
+                a{
+                    // color: #fff;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.65);
+                    font-size: 20px;
+                }
+                &:hover{
+                    a{
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+    }
+}
+.content-wrapper{
+    min-height: 80vh;
 }

@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-	{% include head.html %}
-	<!-- <title>{{page.title}}</title> -->
-</head>
-<body>
-	{% include header.html %}
-	<div class="wrapper">
-		{{content}}
-	</div>
+  <head>
+      
+  {% include head.html %}
+
+  {% if site.google-analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
+  {% endif %}
+  </head>
+
+  <body>
+  {% include header.html %}
+  <div class="wrapper content-wrapper">
+      {{ content }}
+  </div>
+  {% include footer.html %}
+  {% include foot.html %}
 </body>
-<foot>
-	{% include footer.html %}
-	{% include foot.html %}
-</foot>
+
 </html>

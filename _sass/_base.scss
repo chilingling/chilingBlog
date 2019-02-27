@@ -19,6 +19,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    margin: 0;
 }
 
 
@@ -69,7 +70,7 @@ ul, ol {
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
 }
 
 
@@ -94,18 +95,23 @@ h6 {
  */
 
 a {
-    color: #25b3bc;
+    // color: #25b3bc;
+    color: rgba(0,0,0,0.85);
     text-decoration: none;
     transition: border .5s;
 }
 
 a:hover {
-    border-bottom: 2px dotted #000;
+    // color: rgb(44, 86, 125);
+    color: #1890ff;
+    // color: #FFBF00;
+    // border-bottom: 2px dotted #000;
 }
 
 
 .post-content h2:before {
-    content: "¶ ";
+    // content: "¶ ";
+    // content: '"';
     margin-right: 20px;
     color: #25bcba;
 }
@@ -118,8 +124,9 @@ a:hover {
 }
 
 .link:hover {
-    background-color: #e6e6e6;
-    border: none;
+    // background-color: #e6e6e6;
+    // color: #FFBF00;
+    // border: none;
 }
 
 
@@ -214,8 +221,8 @@ table, th {
     text-align: center;
     border-bottom: 1px solid #eee;
     border-collapse: collapse;
-line-height: 25px;
-letter-spacing: 1px;
+    line-height: 25px;
+    letter-spacing: 1px;
 }
 
 
@@ -286,7 +293,7 @@ letter-spacing: 1px;
 }
 
 .tbc:before {
-    content: "- T.B.C -";
+    content: "- waiting for finish -";
     width: 100%;
     text-align: center;
     display: block;
@@ -307,7 +314,8 @@ letter-spacing: 1px;
 }
 
 .eof:before {
-    content: "- E.O.F -";
+    // content: "- E.O.F -";
+    content: "thanks for reading ^_^";
     width: 100%;
     text-align: center;
     display: block;

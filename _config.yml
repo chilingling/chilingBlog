@@ -1,11 +1,25 @@
-# 网站的配置
-title: '炽凌的笔记本'
-name: '炽凌的笔记本'
-email: 1345210829@qq.com
+# Site settings
+title: chilingBlog(炽凌的个人博客)
+name: chiling # your name
+email: 1345210829@qq.com # your email address
 description: >
-    '炽凌记录一些笔记的地方，可能很懒，但我会尽量写的'
-baseurl: '/chilingBlog'
-url: ''
-github_username: 'chiling'
-theme: jekyll-theme-slate
+    自己的简易博客，主题是采用jekyll模板
+baseurl: "/chilingBlog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+#twitter_username: # your Twitter username
+github_username: chiling # your Github username
+#disqus_username: # your disqus username
+
+#google-analytics: # add it if you have one
+
+#skillstree: true # turn on or off the skills tree in about page
+#encoding: utf-8
+
+# Build settings
+permalink: none
 markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+# paginate: 2
+# paginate_path: "page:num"

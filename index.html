@@ -1,11 +1,58 @@
 ---
-	layout:default
-	title:炽凌的博客
+layout: default
+className: index
 ---
-<h2>{{title}}</h2>
-<p>最新文章</p>
-<ul>
+<div class='container'>
+	<!-- {% assign is_first = true %}
 	{% for post in site.posts %}
-		<li>{{post.date | date_to_string}}<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+	{% capture this_year %}
+	{{ post.date | date: "%Y" }}
+	{% endcapture %}
+	{% if is_first %}
+	<h2>{{ this_year }}</h2>
+	{% endif %}
+	{% capture next_year %}
+	{{ post.previous.date | date: "%Y" }}
+	{% endcapture %}
+	{% if this_year == next_year %}
+	{% assign is_first = false %}
+	{% else %}
+	{% assign is_first = true %}
+	{% endif %}
+	<ul>
+		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
+		</li>
+	</ul>
+	{% endfor %} -->
+	<!-- {% for post in site.posts limit: 10 %}
+	<ul>
+		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+		</li>
+	</ul>
+	{% endfor %} -->
+	{% assign is_first = true %}
+	{% for post in site.posts %}
+
+	{% capture this_year %}
+	{{ post.date | date: "%Y" }}
+	{% endcapture %}
+	{% if is_first %}
+	<h2>{{ this_year }}</h2>
+	{% endif %}
+
+	{% capture next_year %}
+	{{ post.previous.date | date: "%Y" }}
+	{% endcapture %}
+	{% if this_year == next_year %}
+	{% assign is_first = false %}
+	{% else %}
+	{% assign is_first = true %}
+	{% endif %}
+
+	<ul>
+		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+		</li>
+	</ul>
+		  
 	{% endfor %}
-</ul>
+</div>
