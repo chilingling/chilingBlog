@@ -121,7 +121,7 @@ SuperType.prototype.sayName = function () {
 function SubType (name, age) {
     // 继承属性
     SuperType.call(this, name);
-    自己的实例属性
+    // 自己的实例属性
     this.age = age;
 }
 // 继承方法
