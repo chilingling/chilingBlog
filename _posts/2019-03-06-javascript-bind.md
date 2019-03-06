@@ -98,19 +98,20 @@ Function.prototype.bind = Function.prototype.bind || function (context) {
     var self = this;
     var args = Array.prototype.slice.call(arguments, 1);
     var F = function () {};
+    F.prototype = this.prototype;
     var bound = function () {
         var innerArgs = Array.prototype.slice.call(arguments);
         var finalArgs = args.concat(innerArgs);
         return self.apply(this instanceof F ? this : context || this, finalArgs);
     }
-    bound.prototype = new fNOP();
+    bound.prototype = new F();
     return bound;
 }
 ```
 
 在你不知道的JavaScript第一卷中说的很清楚，this绑定规则中构造函数（new操作符）构造出来的函数（对象）指向的是调用new操作符的上下文，而不是之前绑定的this。上面一段代码就考虑了这种情况
 
-# // TODO
+首先，声明一个函数F,这个函数F继承了当前函数的原型，然后将返回的函数bound的原型指向函数F的一个实例,然后，在bound函数内部，我们判断当前的this的prototype是否指向F，如果是，则不硬绑定context，否则，则绑定context
 
 
 
