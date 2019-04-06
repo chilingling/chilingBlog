@@ -63,7 +63,8 @@
   font-weight: bold;
 }
 .highlight .kd {
-  color: #000000;
+  // color: #000000;
+  color: #d73a49;
   font-weight: bold;
 }
 .highlight .kn {
@@ -83,7 +84,8 @@
   font-weight: bold;
 }
 .highlight .k, .highlight .kv {
-  color: #000000;
+  // color: #000000;
+  color: #d73a49;
   font-weight: bold;
 }
 .highlight .mf {
@@ -96,7 +98,8 @@
   color: #009999;
 }
 .highlight .mi {
-  color: #009999;
+  // color: #009999;
+  color: rgba(0, 92, 197, 1);
 }
 .highlight .mo {
   color: #009999;
@@ -150,7 +153,13 @@
   color: #0086B3;
 }
 .highlight .nc {
-  color: #445588;
+  // color: #445588;
+  color: #6f42c1;
+  font-weight: bold;
+}
+.highlight .nx {
+  // color: #445588;
+  color: rgba($color: #000000, $alpha: .60);
   font-weight: bold;
 }
 .highlight .no {
@@ -204,6 +213,12 @@
 .highlight .w {
   color: #bbbbbb;
 }
-.highlight {
-  background-color: #f8f8f8;
+pre.highlight {
+  // background-color: #f8f8f8;
+  background-color: #f6f8fa;
+  transition: all .3s ease-in-out;
+}
+pre.highlight:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 8px rgba($color: #000000, $alpha: .46);
 }
