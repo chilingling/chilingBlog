@@ -18,6 +18,7 @@ github_username: chiling # your Github username
 # Build settings
 permalink: none
 markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-paginate
