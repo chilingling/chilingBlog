@@ -26,7 +26,7 @@ finished: true
 - 此时将该结点的下一个指针指向要删除的结点的下一个结点
 - 删除目标结点，此时的时间复杂度是`O(1)`
 
-![](../3hTvBYBv97mOsB.jpg)
+![](../img/3hTvBYBv97mOsB.jpg)
 
 优化的解法：
 
