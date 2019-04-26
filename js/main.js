@@ -1,4 +1,4 @@
-// hljs.initHighlightingOnLoad();
+hljs.initHighlightingOnLoad();
 
 $(document).ready(function(){
     $("h2,h3,h4,h5,h6").each(function(i,item){
