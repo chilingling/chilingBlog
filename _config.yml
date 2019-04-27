@@ -8,7 +8,8 @@ baseurl: "/chilingBlog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 #twitter_username: # your Twitter username
 github_username: chiling # your Github username
-disqus_username: disqus_MQr8vAjOMR # your disqus username
+# disqus_username: disqus_MQr8vAjOMR # your disqus username
+disqus_username: chilings-blog # your disqus username
 
 google-analytics: UA-139133184-1 # add it if you have one
 
