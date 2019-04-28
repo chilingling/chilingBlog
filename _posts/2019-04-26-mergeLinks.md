@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-04-26
 categories: c++
 tags: 剑指Offer 链表
+comments: true
 finished: true
 ---
 > 输入两个递增排序的链表，合并这两个链表并使新链表中的结点仍然是按照递增排序的。例如输入图3.7中的链表1和链表2，则合并之后的升序链表如链表3所示。链表结点定义如下：

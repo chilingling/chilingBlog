@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-03-01
 categories: JavaScript
 tags: Javascript
+comments: true
 finished: true
 ---
 #### 构造函数、原型、和实例的关系

@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-03-08
 categories: JavaScript
 tags: Javascript
+comments: true
 finished: true
 ---
 > 在一次的笔试题中遇到的，当时理所当然的就以为答案是[1,2,3]，后来发现自己错了。便记录一下

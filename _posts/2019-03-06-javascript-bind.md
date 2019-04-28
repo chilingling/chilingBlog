@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-03-06
 categories: JavaScript
 tags: Javascript
+comments: true
 finished: true
 ---
 ###### bind函数介绍

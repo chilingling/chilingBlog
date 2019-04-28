@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-03-27
 categories: JavaScript
 tags: Javascript
+comments: true
 finished: true
 ---
 > 昨天面试的时候被问到如何实现，在电话面试中仅仅答出来了大概的思路，但是并没有完整去实现，后来找到一个MDN的polyfill，特此记录一下

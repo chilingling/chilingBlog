@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-04-12
 categories: LeetCode
 tags: LeetCode 动态规划
+comments: true
 finished: true
 ---
 > 给定一个包含非负整数的 *m* x *n* 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。

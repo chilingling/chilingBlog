@@ -5,6 +5,7 @@ data: 2019-02-27
 author: 炽凌
 categories: structdata
 tags: 数据结构 二叉树
+comments: true
 finished: true
 ---
 >  定义：每个结点最多有两个子树的结构，子树又分为左子树和右子树。可以没有结点

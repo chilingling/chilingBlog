@@ -5,6 +5,7 @@ author: 炽凌
 date: 2019-03-01
 categories: JavaScript
 tags: Javascript
+comments: true
 finished: true
 ---
 __执行上下文的类型：__
